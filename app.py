@@ -10,7 +10,7 @@ def deploy(payload):
     try:
         with open('payload.json', 'w', encoding='utf-8') as f:
             json.dump(payload, f, ensure_ascii=False, indent=4)
-            return True
+            return "Success"
     except OSError:
         return None
 
